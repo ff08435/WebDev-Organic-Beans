@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background-color: #f4efd9; /* Light beige background */
+  margin: 0;
+  padding: 0;
+  font-family: 'Your Preferred Font', sans-serif;
+
+
+}
+a{ 
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+.slider-container {
+  max-width: 100%;      /* Ensure the slider takes up the full screen width */
+  height: 500px;        /* Set a fixed height for the slideshow */
+  overflow: hidden;     /* Hide any overflow from large images */
+  margin: 0 auto;       /* Center the slider */
+  display: flex;        /* Flexbox for centering the images */
+  justify-content: center;
+  align-items: center;
+}
+
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ddd;      /* Add a light border around the images */
+  padding: 5px;                /* Add some padding inside the border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Add subtle shadow for depth */
+  border-radius: 8px;          /* Round the corners slightly */
+}
+
+

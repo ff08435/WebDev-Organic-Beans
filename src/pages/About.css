@@ -1,0 +1,29 @@
+/* src/pages/About.css */
+
+.about-page {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Giaza Stencil', serif; /* Use the custom font */
+}
+
+.about-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Giaza Stencil', serif;
+}
+
+.about-page p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+  font-family: 'Giaza Stencil', serif;
+}
+.coffee-about {
+  width: 400px;  /* Adjust the size of the coffee bean logo */
+  height: auto;
+  margin: 0 30px;
+  transform: translate(100%, -100x); /* Move it to the left (-20%) and up (-50px) */
+
+}

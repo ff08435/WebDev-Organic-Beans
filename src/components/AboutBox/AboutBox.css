@@ -7,18 +7,18 @@
   margin: 50px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transform: translate(-60%, -500x); /* Starting position */
+  transform: translate(-60%, -500x); 
   opacity: 0;
-  animation: slide-in 1s ease-out forwards; /* Slide in animation */
+  animation: slide-in 1s ease-out forwards; 
 }
 
 @keyframes slide-in {
   from {
-      transform: translate(-250%, -500px); /* Start position */
+      transform: translate(-250%, -500px);
       opacity: 0;
   }
   to {
-      transform: translate(-60%, -500px); /* End position (default) */
+      transform: translate(-60%, -500px);
       opacity: 1;
   }
 }

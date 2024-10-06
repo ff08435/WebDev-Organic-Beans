@@ -1,34 +1,31 @@
 .navbar {
-  display: flex;  /* Flexbox layout */
-  justify-content: space-between;  /* Spread items across the navbar */
-  align-items: center;  /* Center items vertically */
+  display: flex; 
+  justify-content: space-between;  
+  align-items: center;
   background-color: #d8e1c0;
   padding: 10px 50px;
   border-radius: 50px;
   max-width: 90%;
   margin: 20px auto;
-  height: 70px;  /* Fixed height for navbar */
+  height: 70px;  
 }
 
-/* Left and right sections */
 .navbar-left,
 .navbar-right {
   display: flex;
   align-items: center;
 }
 
-/* Centering the logo in the middle */
 .navbar-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Links in the navbar */
 .navbar-links {
   display: flex;
   list-style: none;
-  gap: 70px;  /* Adjust the space between the links */
+  gap: 70px; 
 }
 .navbar-links li a {
   text-decoration: none;
@@ -39,29 +36,26 @@
   font-weight: bold;
 }
 
-/* Bean icon in the middle */
 .bean-icon {
-  width: 300px;  /* Adjust the size of the coffee bean logo */
+  width: 300px;  
   height: auto;
   margin: 0 30px;
 }
 
-/* Right-side icons (Search, Cart) */
 .navbar-icons {
   display: flex;
-  gap: 30px;  /* Increase gap between the search and cart icons */
+  gap: 30px;  
 }
 .navbar-icons a {
   font-size: 1.5rem;
   color: #4a4a4a;
-  margin-left: 20px;  /* Add margin to the left of each icon for more space */
+  margin-left: 20px;  
 }
 
 .navbar-icons a:hover {
   color: #2e2e2e;
 }
 
-/* Add margin to the right of the "Contact" link */
 .navbar-links li:last-child {
-  margin-right: 20px;  /* Add some margin to the right of the Contact Us link */
+  margin-right: 20px;  
 }

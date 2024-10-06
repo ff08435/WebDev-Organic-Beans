@@ -1,0 +1,80 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+}
+
+.scroll-container {
+  display: flex;
+  height: 100vh;
+  width: 400vw;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  
+  scroll-behavior: smooth;
+}
+
+.scroll-item {
+  scroll-snap-align: start;  
+  flex: none; 
+  width: 100vw;  
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*font-size: 4rem;*/
+  color: rgb(37, 12, 1);
+  text-align: center;
+}
+.section-1 {
+  background-color: #658b13;  
+}
+.section-2 {
+  background-color: #a1a34076;  
+}
+.section-3 {
+  background-color: #472207;  
+}
+.section-4 {
+  background-color: #A0522D;  
+}
+
+.coffee-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coffee-image img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.coffee-description {
+  flex: 1;
+  text-align: left;
+  font-family: 'Giaza Stencil', serif;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #793d12b8;  
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Giaza Stencil', serif;
+}
+
+.btn:hover {
+  background-color: #A0522D;  
+}

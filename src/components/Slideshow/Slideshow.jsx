@@ -15,7 +15,7 @@ const Slideshow = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 3000);  // Change slide every 3 seconds
+    }, 3000); 
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -28,7 +28,7 @@ const Slideshow = () => {
           className={`slide-container ${currentSlide === index ? 'active' : ''}`}
         >
           <div className="slide-text">
-            <h2>{slide.text}</h2>  {/* Text on top of the image */}
+            <h2>{slide.text}</h2>  
           </div>
           <img
             src={slide.src}

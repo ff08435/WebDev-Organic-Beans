@@ -11,7 +11,11 @@ const AboutBox = () => {
         on sustainability and quality, we ensure that every cup of coffee you brew has the perfect
         balance of flavor and freshness...
       </p>
-      {/* Link to About page */}
+      <p>
+        Our beans are sourced from the best coffee farms around the world, and we take pride in
+        supporting local farmers and their communities. Join us in our mission to enjoy great coffee
+        while making a positive impact on the world.
+      </p>
       <Link to="/about">
         <button className="read-more-button">Read More</button>
       </Link>

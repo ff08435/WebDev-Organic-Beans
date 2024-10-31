@@ -1,17 +1,24 @@
 .navbar {
   display: flex; 
+  position: fixed;
   justify-content: space-between;  
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%); 
   align-items: center;
   background-color: #d8e1c0;
-  padding: 10px 50px;
+  padding: 10px 30px;
   border-radius: 50px;
   max-width: 90%;
+  height: 70px;
+  z-index: 1000;
   margin: 20px auto;
-  height: 70px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-left,
-.navbar-right {
+.navbar-right 
+ {
   display: flex;
   align-items: center;
 }
@@ -32,8 +39,8 @@
   color: #4a4a4a;
   font-family: 'Giaza Stencil', serif;
   font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
+  text-transform: bold;
+  font-weight: lowercase;
 }
 
 .bean-icon {
@@ -44,7 +51,7 @@
 
 .navbar-icons {
   display: flex;
-  gap: 30px;  
+  gap: 20px;  
 }
 .navbar-icons a {
   font-size: 1.5rem;

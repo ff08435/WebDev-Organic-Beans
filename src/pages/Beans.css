@@ -2,22 +2,26 @@
 body, html {
   margin: 0;
   padding: 0;
+  
   height: 100%;
   
 }
 
 .scroll-container {
+  padding: 150px;
   display: flex;
   height: 100vh;
   width: 400vw;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  
+  /* overscrcoll-behavior-x: contain; */
+ 
+  /* animation: both; */
   scroll-behavior: smooth;
 }
 
-.scroll-item {
-  scroll-snap-align: start;  
+.scroll-item {  
+  scroll-snap-align: center;
   flex: none; 
   width: 100vw;  
   height: 100vh; 
@@ -55,6 +59,7 @@ body, html {
 }
 
 .coffee-description {
+  font-size: 20px;
   flex: 1;
   text-align: left;
   font-family: 'Giaza Stencil', serif;
@@ -62,6 +67,7 @@ body, html {
 
 .buttons {
   margin-top: 20px;
+
 }
 
 .btn {
@@ -73,6 +79,7 @@ body, html {
   border-radius: 5px;
   cursor: pointer;
   font-family: 'Giaza Stencil', serif;
+  font-size: 15px;
 }
 
 .btn:hover {

@@ -1,9 +1,10 @@
 
 
 .about-page {
-  padding: 40px;
+  /* margin-top: 100px; */
+  padding: 150px;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px auto;
   font-family: 'Giaza Stencil', serif; 
   text-align: center;
 }

@@ -66,3 +66,22 @@
 .navbar-links li:last-child {
   margin-right: 20px;  
 }
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.search-form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-form button {
+  padding: 5px;
+  background-color: #8f703a;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;}

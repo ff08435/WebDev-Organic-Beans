@@ -1,9 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';  
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import beanIcon from '../../assets/bean.png'; 
 import './Navbar.css';
 
 const Navbar = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/beans?search=${searchQuery}`);
+    }
+  };
+
   return (
     <div className="navbar">
       <div className="navbar-left">
@@ -20,12 +30,23 @@ const Navbar = () => {
 
       <div className="navbar-right">
         <ul className="navbar-links">
-          <li><Link to="/signup">Signup</Link></li>
+          <li><Link to="/home">Home</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
         <div className="navbar-icons">
-          <Link to="/search"><i className="fas fa-search"></i></Link> 
-          <Link to="/cart"><i className="fas fa-shopping-cart"></i></Link>  
+          {/* Search Form */}
+          <form onSubmit={handleSearch} className="search-form">
+            <input 
+              type="text" 
+              placeholder="Search..." 
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            <button type="submit">🔍</button>
+          </form>
+          <Link to="/checkout" onClick={() => console.log("Navigating to Checkout")}>
+            <i className="fas fa-shopping-cart"></i> 
+          </Link>
         </div>
       </div>
     </div>

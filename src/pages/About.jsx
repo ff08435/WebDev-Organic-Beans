@@ -1,4 +1,3 @@
-// src/pages/About.js
 import './About.css';
 import coffeeAbout from '../pages/aboutmebeans.png';  
 
@@ -15,12 +14,10 @@ const About = () => {
         and ethical sourcing.
       </p>
       
-      <div className="navbar-center">
+      <div className="about-image-container">
         <img src={coffeeAbout} alt="coffee About" className="coffee-about" />
       </div>
     </div>
-
-    
   );
 };
 

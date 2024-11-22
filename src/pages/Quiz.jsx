@@ -1,5 +1,6 @@
 // src/pages/Quiz.jsx
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Quiz.css';
 
 const Quiz = () => {
@@ -90,8 +91,13 @@ const Quiz = () => {
             <p>{recommendation}</p>
           ) : (
             <div>
-              <h3>{recommendation.name}</h3>
-              <p>{recommendation.description}</p>
+              <Link
+                to={`/beans?name=${encodeURIComponent(recommendation.name)}`}
+                className="recommendation-link"
+              >
+                <h3>{recommendation.name}</h3>
+              </Link>
+              <p>{recommendation.description || "Discover more about this coffee!"}</p>
             </div>
           )}
         </div>

@@ -1,11 +1,9 @@
-
-
+/* About Page Styles */
 .about-page {
-  /* margin-top: 100px; */
-  padding: 150px;
+  padding: 150px 20px; /* Add padding for smaller screens */
   max-width: 800px;
   margin: 20px auto;
-  font-family: 'Giaza Stencil', serif; 
+  font-family: 'Giaza Stencil', serif;
   text-align: center;
 }
 
@@ -23,10 +21,54 @@
   color: #4a4a4a;
   font-family: 'Giaza Stencil', serif;
 }
-.coffee-about {
-  width: 400px;  
-  height: auto;
-  margin: 0 30px;
-  transform: translate(100%, -100x); 
 
+.about-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.coffee-about {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 100px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .about-page h1 {
+    font-size: 2rem; /* Reduce heading size */
+  }
+
+  .about-page p {
+    font-size: 1rem; /* Reduce text size */
+  }
+
+  .coffee-about {
+    width: 300px; /* Reduce image width */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 80px 5px; /* Further reduce padding for very small screens */
+  }
+
+  .about-page h1 {
+    font-size: 1.8rem; /* Adjust heading size for small screens */
+  }
+
+  .about-page p {
+    font-size: 0.9rem; /* Adjust text size */
+    line-height: 1.4; /* Adjust line height for better readability */
+  }
+
+  .coffee-about {
+    width: 100%; /* Make image take full width */
+    max-width: 250px; /* Limit the maximum width */
+  }
 }

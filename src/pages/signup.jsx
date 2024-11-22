@@ -5,29 +5,36 @@ import signupIcon from '../pages/contactIcon.png';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
 const Signup = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); // Initialize navigate
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:5000/signup", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, password }),
-    });
+    try {
+      const response = await fetch("http://localhost:5000/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, password }),
+      });
 
-    const data = await response.json();
-    if (response.ok) {
-      alert("Signup successful");
-      navigate("/");
-    } else {
-      alert(data.error || "Signup failed");
+      // Parse response data
+      const data = await response.json();
+
+      if (response.ok) {
+        alert("Signup successful");
+        navigate("/"); // Navigate to home page on success
+      } else {
+        alert(data.error || "Signup failed");
+      }
+    } catch (error) {
+      console.error("Fetch error:", error);
+      alert("Network error: Unable to reach the server");
     }
   };
 

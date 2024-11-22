@@ -16,8 +16,8 @@ const AboutBox = () => {
         supporting local farmers and their communities. Join us in our mission to enjoy great coffee
         while making a positive impact on the world.
       </p>
-      <Link to="/about">
-        <button className="read-more-button">Read More</button>
+      <Link to="/beans">
+        <button className="beans-button">Shop Now</button>
       </Link>
     </div>
   );
